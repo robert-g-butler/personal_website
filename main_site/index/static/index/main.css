@@ -1,4 +1,8 @@
 
 body {
-    background: black url("slate_1920x1280.jpg");
+    background-color: #efefef;
+}
+
+.jumbotron {
+    background-color: #cecece;
 }
