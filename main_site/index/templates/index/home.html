@@ -1,17 +1,29 @@
 {% extends 'index/base.html' %}
 {% block content %}
-  <div class="row">
-    <div class="col-2 d-none d-lg-block">
-      <ul class="list-group">
-        <li class="list-group-item">One</li>
-        <li class="list-group-item">Two</li>
-        <li class="list-group-item">Three</li>
-        <li class="list-group-item">Four</li>
-        <li class="list-group-item">Five</li>
-      </ul>
-    </div>
-    <div class="col">
-      <h1>Home page content</h1>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p class="mt-4">I specialize in setting up workflows for data processing, analysis, and vizualization.</p>
+        <p>If you would like to work with me, please peruse this site and check out the Projects page for examples of my work.</p>
     </div>
   </div>
+  <section id="skills" class="container text-center">
+    <div class="row">
+        <div class="col">
+          <span class="fas fa-database fa-3x mb-3"></span>
+          <h3>Data Pipelines</h3>
+          <p>Automating data processing</p>
+        </div>
+        <div class="col">
+          <span class="far fa-lightbulb fa-3x mb-3"></span>  <!-- or "fas fa-microscope" -->
+          <h3>Data Exploration</h3>
+          <p>Applying analytics to find insights</p>
+        </div>
+        <div class="col">
+          <span class="fas fa-chart-line fa-3x mb-3"></span>
+          <h3>Data Visualization</h3>
+          <p>Graphing and interactive dashboards</p>
+        </div>
+      </div>
+  </section>
 {% endblock content %}
