@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'apps.index.apps',
+    'apps.index.apps.IndexConfig',
+    'apps.twitter_analysis.apps.TwitterAnalysisConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,9 +79,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+    'twitter': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': r'C:\Users\robbi\Dropbox\Work & Learning\Programming\Language - Python\Projects & Tutorials\project - twitter_analyzer\twitter_data.db',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
