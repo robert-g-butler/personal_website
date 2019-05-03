@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path(route='', view=include('apps.index.urls')),
     path(route='control/', view=admin.site.urls),
+    path(route='', view=include('apps.index.urls')),
+    path(route='twitter_analysis/', view=include('apps.twitter_analysis.urls')),
 ]
